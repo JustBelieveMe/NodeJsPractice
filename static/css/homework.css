@@ -1,0 +1,34 @@
+#header{
+    font-size: 70px;
+    text-align: center;
+}
+
+
+/* #imgPreview{
+    width: 100px;
+    height: 100px;
+} */
+
+#buttonArea{
+    text-align: center;
+}
+
+.buttonC{
+    margin: 8px;
+}
+
+#footer{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #473864;
+}
+
+.input_redBorder{
+    border:#ff0000 1px solid
+}
+.input_blackBorder{
+ border:#000000 1px solid
+}
