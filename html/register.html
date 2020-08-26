@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JustBelieveMe">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/js/register.js" type="text/javascript"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+    <link rel="stylesheet" href="../static/css/register.css" type="text/css" />
+</head>
+
+<body>
+    <header name="header" id="header">
+        Account Register Page
+    </header>
+    <div name="basicData">
+        <form name="sheet" id="sheet" ref="fileUpload" action="/upload" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>基本資料</legend>
+                <br>
+                真實姓名:<input type="text" name="name" id="name">
+                <br>
+                使用者帳戶:
+                <input type="text" name="username" id="username">
+                <br>
+                密碼:
+                <input type="password" name="password" id="password">
+                <br>
+                請再輸入一次密碼:
+                <input type="password" name="verifyPassword" id="verifyPassword">
+                <br>
+                性別：
+                <select name="gender" id="gender">
+                    <option value="0">男</option>
+                    <option value="1">女</option>
+                </select>
+                <br>
+                大頭貼：
+                <input type="file" name="headShot" id="headShot" value="選擇檔案" accept="image/gif, image/jpeg, image/png">
+                <img id="imgPreview" style="width: 200px;" src="#" />
+                <br>
+                Email:
+                <input type="email" name="email" id="email">
+                <br>
+                安全問題:
+                <select name="securityQ" id="securityQ">
+                    <option value="0">最喜歡吃的食物?</option>
+                    <option value="1">第一隻養的寵物名字?</option>
+                    <option value="2">最常用的網路ID?</option>
+                    <option value="3">就讀哪一所國中?</option>
+                    <option value="4">幾歲時拿到第一台個人電腦?</option>
+                </select>
+                <br>
+                安全問題答案:
+                <input type="text" name="answer" id="answer">
+            </fieldset>
+            <div name="buttonArea" id="buttonArea">
+                <input type="submit" class="buttonC" id="submit" value="送出">
+                <input type="button" class="buttonC" id="clear_btn" value="清除">
+                <input type="button" class="buttonC" value="填值">
+            </div>
+
+    </div>
+    </form>
+    <footer name="footer" id="footer">
+        <div>
+            copyright© 2020 JustBelieveMe All Rights Reserverd.
+        </div>
+    </footer>
+</body>
+
+</html>
